@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+	var files = ["The Hacker's Manual (2015).pdf", "Hacking Wireless Networks For Dummies.pdf", "Java Programming.pdf"];
+	function searchFile(){
+		var key=document.getElementById('key').value;
+		var patt=new RegExp(key);
+		var res;
+		for (var i = 0; i < files.length; i++) {
+			res=patt.test(files[i])
+			if(res==true){
+				var elemDiv = document.createElement('p');
+				var textnode = document.createTextNode(files[i]);
+				elemDiv.appendChild(textnode);
+				var anchor=document.createElement('a');
+				anchor.href="files/"+files[i];
+				anchor.appendChild(elemDiv);
+				document.body.appendChild(anchor);
+			}
+		}
+
+	}
+	</script>
+</head>
+<body id="main">
+	<input type="text" id="key">
+	<button id="search"onclick="searchFile()">Search</button>
+	<script>
+		var event = document.getElementById("key");
+	event.addEventListener("keydown", function (e) {
+   	if (e.keyCode === 13) {
+        searchFile();
+   	}
+	});
+	</script>
+</body>
+</html>

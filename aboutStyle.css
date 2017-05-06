@@ -1,0 +1,88 @@
+html{
+    background-image: url("images/background3.png");
+    height: 100%;
+	width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name{
+	width: 100%;
+	height: 522px;
+	margin:auto;
+	font-family: Trebuchet;
+	font-size: 40px;
+	text-shadow: 10px 10px 10px #ccc;
+	text-align: center;
+	transition: font-size 1s;
+}
+.name:hover{
+	font-size: 80px;
+}
+.name h1{
+	position: relative;
+  	top: 40%;
+  	transform: translateY(-80%);
+}
+.about{
+	width: 100%;
+	margin:auto;
+	font-family: trebuchet;
+	font-size: 40px;
+	background-color: #FFF2F2; 
+	text-shadow: 2px 3px 10px #96DDF1;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.about span{
+	font-family: trebuchet;
+	font-size: 50px;
+	text-shadow: 5px 5px 10px #ccc;
+	font-weight: bold;
+	color: #0BCFCD;
+	transition: font-size 1s;
+}
+
+.about span:hover{
+	font-size: 80px;
+}
+
+.header{
+	width: 100%;
+	height: 70px;
+	background-color:;
+	position: static;
+	border-radius: 10px;
+	padding: none;
+}
+
+.signup{
+	float: right;
+	opacity: 0.2;
+	height: 70px;
+	margin-right:308px;
+	font-family: trebuchet;
+	font-size: 20px;
+	font-weight: bold;
+	transition: font-size 1s,text-shadow 1s;
+}
+.login{
+	float: right;
+	opacity: 0.2;
+	height: 70px;
+	margin-right:20px;
+	font-family: trebuchet;
+	font-size: 20px;
+	font-weight: bold;
+	transition: font-size 1s,text-shadow 1s;
+
+}
+
+.login:hover,.signup:hover{
+	opacity:1;
+	font-size: 25px;
+	text-shadow: 10px 10px 10px #ddd;
+}

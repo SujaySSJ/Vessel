@@ -1,0 +1,403 @@
+.header-container{
+	display: flex;
+
+}
+
+div#website_name{
+	flex: 2;
+	background-color: white;
+	order:2;
+}
+#vessel{
+	font-size: 100px;
+	text-shadow: 10px 10px 10px #ccc;
+}
+
+
+div#website_logo{
+	flex :1;
+	background-color: white;
+	order:1;
+}
+
+
+div#user_details{
+	flex: 2;
+	background-color: honeydew;
+	order:3;
+	display: flex;
+	text-shadow: 10px 10px 10px #ccc;
+	margin:20px 20px 30px 20px;
+	border-radius: 20px;
+	transition: box-shadow 0.5s;
+}
+div#user_details:hover{
+	box-shadow:	0 12px 40px 0 rgba(150, 0, 20, 0.3), 0 20px 50px 0 rgba(0, 100, 100, 0.25);
+}
+#username{
+	flex : 2;
+}
+#userphoto{
+	flex:1;
+}
+#userphoto img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid grey;
+}
+#username button{
+	background-color : honeydew;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 10px;
+}
+
+
+
+.main-container{
+	display: flex
+}
+
+
+#recentlyShared{
+	flex:1;
+	overflow-y: auto;
+	text-shadow: 10px 10px 10px #ccc;
+	margin-right: 40px;
+	margin-left: 10px;
+	border-radius: 20px;
+	transition: box-shadow 1s;
+}
+#recentlyShared:hover{
+	box-shadow:	0 12px 40px 0 rgba(150, 0, 20, 0.3), 0 20px 50px 0 rgba(0, 100, 100, 0.25);
+
+}
+#allShared{
+	flex:2;
+	background-color: white;
+	margin-right: 25px;
+	border-radius: 20px;
+	transition: box-shadow 1s;
+}
+#allShared:hover{
+	box-shadow:	0 12px 40px 0 rgba(150, 0, 20, 0.3), 0 20px 50px 0 rgba(0, 100, 100, 0.25);
+}
+#allShared h1{
+	text-shadow: 10px 10px 10px #ccc;
+}
+#searchShared{
+	flex:1;
+	text-shadow: 10px 10px 10px #ccc;
+	margin-right: 20px;
+	border-radius: 20px;
+	transition: box-shadow 1s;
+}
+#searchShared:hover{
+	box-shadow:	0 12px 40px 0 rgba(150, 0, 20, 0.3), 0 20px 50px 0 rgba(0, 100, 100, 0.25);
+
+}
+
+
+
+.layout{
+	height: 290px;
+	width:90%;
+	margin: 20px 20px 20px 20px;
+}
+.outer_layer{
+	display: inline-block;
+	height: 250px;
+	width: 600px;
+	background-color: honeydew;
+	padding: 40px 40px 40px 40px;
+	transition: box-shadow 1s,width 1s,height 1s;
+}
+.outer_layer:hover{
+	box-shadow:	0 12px 40px 0 rgba(150, 0, 20, 0.3), 0 20px 50px 0 rgba(0, 100, 100, 0.25);
+	height: 270px;
+	width:620px;
+}
+.content{
+	height: 150px;
+	width:520px;
+	box-shadow:	0 12px 40px 0 rgba(0, 0, 150, 0.3), 0 20px 50px 0 rgba(0, 100, 100, 0.25);
+}
+.logo{
+	height: 150px;
+	width: 180px;
+	background-color: blue;
+	float: left;
+	box-shadow: honeydew;
+}
+
+.information{
+	height: 150px;
+	width: 340px;
+	background-color: lightblue;
+	display: inline-block;
+	float: right;
+	overflow-y: auto;
+}
+.information div{
+	font-family: Helvetica;
+	font-weight: bold;
+}
+#fileName{
+	font-size: 25px;
+}
+#fileDescription{
+	font-style: italic;
+}
+
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.new-upload-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid red;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.new-upload-header {
+    padding: 2px 16px;
+    background-color: red;
+    color: white;
+}
+
+.new-upload-body {padding: 2px 16px;}
+
+.new-upload-footer {
+    padding: 2px 16px;
+    background-color:red;
+    color: white;
+}
+.new-upload-body input{
+	height: 50px;
+	width: 50%;
+	font-size: 20px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	transition: box-shadow 0.5s;
+}
+.new-upload-body input:focus{
+	box-shadow: 2px 2px 2px red;
+}
+.new-upload-body select{
+	height: 50px;
+	width: 25%;
+	font-size: 20px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+.new-upload-body input[type=submit]{
+	height: 50px;
+	width: 25%;
+	background-color: orange;
+	font-size: 30px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#refreshbtn{
+	float: right;
+	margin-right: 50px;
+	transition: transform 1s;
+}
+
+#refreshbtn:hover{
+	transform: rotate(360deg);
+}
+
+#uploadbtn{
+	margin-left: 50px;
+	transition:height 0.5s,width 0.5s;
+}
+#uploadbtn:hover{
+	height:170px;
+	width:170px;
+}
+#downloadbtn{
+	margin-left: 40px;
+	transition:height 0.5s,width 0.5s;
+}
+#downloadbtn:hover{
+	height:170px;
+	width:170px;
+}
+#yourfiles{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#yourfiles li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	transition: height 1s,width 1s,box-shadow 0.5s,font-size 2s ;
+}
+
+
+#yourfiles li.public:hover{
+	box-shadow: 3px 3px 3px 3px #6DFD5E;
+}
+#yourfiles li.group:hover{
+	box-shadow: 3px 3px 3px 3px #3F5EFA;
+}
+#yourfiles li.private:hover{
+	box-shadow: 3px 3px 3px 3px #FB4B34;
+}
+#searchShared input{
+	width: 200px;
+	margin: 10px 10px 10px 10px;
+	transition: width 0.4s ease-in-out;
+}
+#searchShared input:focus{
+	width:400px;
+}
+
+
+
+
+.modald {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.new-download-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid red;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.closed {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closed:hover,
+.closed:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.new-download-header {
+    padding: 2px 16px;
+    background-color: red;
+    color: white;
+}
+
+.new-download-body {padding: 2px 16px;}
+
+.new-download-footer {
+    padding: 2px 16px;
+    background-color:red;
+    color: white;
+}
+.new-download-body input{
+	height: 50px;
+	width: 50%;
+	font-size: 20px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	transition: box-shadow 0.5s;
+}
+.new-download-body input:focus{
+	box-shadow: 2px 2px 2px red;
+}
+.new-download-body select{
+	height: 50px;
+	width: 25%;
+	font-size: 20px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+.new-download-body input[type=submit]{
+	height: 50px;
+	width: 25%;
+	background-color: orange;
+	font-size: 30px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
